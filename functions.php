@@ -6,4 +6,5 @@
   require_once('modules/nav_walker.php');
   require_once('modules/custom_posts.php');
   require_once('modules/blog_links.php');
+  require_once('modules/woocommerce.php');
 ?>

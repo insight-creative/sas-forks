@@ -3,6 +3,10 @@
   if ( have_posts() ) : while ( have_posts() ) : the_post();
 ?>
 
+<?php if (class_exists('WooCommerce') && is_woocommerce()) : ?>
+  <?php woocommerce_breadcrumb(); ?>
+<?php endif; ?>
+
 <h1><?php the_title(); ?></h1>
 
 <?php the_content(); ?>

@@ -2,31 +2,27 @@
 
 // Example template for creating custom post types
 
-// function create_custom_posts() {
-//   register_post_type( 'prefix_posttype',
-//     array(
-//       'labels' => array(
-//         'name' => __( 'Locations' ),
-//         'singular_name' => __( 'Location' ),
-//         'all_items' => __( 'All Locations' ),
-//         'view_item' => __( 'View Location' ),
-//         'add_new_item' => __( 'Add New Location' ),
-//         'edit_item' => __( 'Edit Location' ),
-//         'update_item' => __( 'Update Location' )
-//       ),
-//       'public' => false,
-//       'publicly_queryable' => false,
-//       'show_ui' => true,
-//       'exclude_from_search' => true,
-//       'show_in_nav_menus' => false,
-//       'has_archive' => false,
-//       'rewrite' => false,
-// 			'menu_icon' => 'dashicons-location-alt',
-//       'supports' => array( 'title', 'editor', 'thumbnail' )
-//     )
-//   );
-// }
-//
-// add_action( 'init', 'create_custom_posts' );
+function create_custom_posts() {
+  register_post_type( 'sasforks_distributor',
+    array(
+      'labels' => array(
+        'name' => __( 'Distributors' ),
+        'singular_name' => __( 'Distributor' ),
+        'all_items' => __( 'All Distributors' ),
+        'view_item' => __( 'View Distributor' ),
+        'add_new_item' => __( 'Add New Distributor' ),
+        'edit_item' => __( 'Edit Distributor' ),
+        'update_item' => __( 'Update Distributor' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'rewrite' => array( 'slug' => 'contact'),
+			'menu_icon' => 'dashicons-phone',
+      'supports' => array( 'title', 'editor', 'thumbnail' )
+    )
+  );
+}
+
+add_action( 'init', 'create_custom_posts' );
 
 ?>
