@@ -1,0 +1,23 @@
+{
+  "name": "wordpress-starter",
+  "version": "1.0.0",
+  "description": "A simple-as-possible starter theme and steps for setting up a local Wordpress environment for development.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run watch | wp server",
+    "watch": "node-sass --watch --include-path styles styles/style.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmcgillivray/wordpress-starter.git"
+  },
+  "author": "Kevin McGillivray",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kmcgillivray/wordpress-starter/issues"
+  },
+  "homepage": "https://github.com/kmcgillivray/wordpress-starter#readme",
+  "devDependencies": {
+    "node-sass": "^4.5.3"
+  }
+}
