@@ -79,6 +79,12 @@ img {
   margin-right: auto;
   padding: 15px;
 }
+.container-narrow {
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
 @media(min-width: 30em) {
   .alignright {
     float: right;
