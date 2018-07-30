@@ -7,12 +7,18 @@
   <?php woocommerce_breadcrumb(); ?>
 <?php endif; ?>
 
-<h1><?php the_title(); ?></h1>
+<section class="jumbotron text-center">
+  <div class="container">
+    <h1 class="jumbotron-title"><?php the_title(); ?></h1>
+  </div>
+</section>
 
-<?php the_content(); ?>
+<section class="container">
+  <?php the_content(); ?>
 
-<?php endwhile; else: ?>
-	<p><?php _e('Sorry, this page does not exist.'); ?></p>
-<?php endif; ?>
+  <?php endwhile; else: ?>
+  	<p><?php _e('Sorry, this page does not exist.'); ?></p>
+  <?php endif; ?>
+</section>
 
 <?php get_footer(); ?>

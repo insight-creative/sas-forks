@@ -3,7 +3,7 @@
 // Load fonts and styles into theme
 
 // If loading fonts from Google Fonts or Typekit, put URL here
-$font_url = null;
+$font_url = 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i';
 
 // If you want to use Tachyons flip this to true! Go get the newest version if you want and paste it below in the Tachyons wp_enqueue_style.
 $tachyons = false;
