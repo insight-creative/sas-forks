@@ -27,6 +27,15 @@ p {
   margin-top: 0px;
   margin-bottom: 1rem;
 }
+a {
+  color: $black;
+  text-decoration: none;
+  transition: .3s color;
+}
+a:hover {
+  color: $yellow;
+  transition: .3s color;
+}
 h1,
 h2,
 h3,
@@ -111,6 +120,42 @@ img {
 .link {
   text-decoration: none;
 }
+.image-link {
+  display: block;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 15px;
+  background-color: $light-gray;
+  border-radius: 5px;
+}
+.btn-primary {
+  background-color: $yellow;
+  color: $white;
+  text-transform: uppercase;
+  font-weight: 900;
+  transition: .3s background-color;
+}
+.btn-primary:hover {
+  background-color: $black;
+  color: $white;
+  transition: .3s background-color;
+}
+
+.card {
+  margin-bottom: 2.5rem;
+}
+.card-title {
+  margin-top: 0;
+}
+.card-meta {
+  display: block;
+  margin-bottom: 1rem;
+  color: lighten($black, 70%);
+}
+
 .jumbotron-title {
   text-transform: uppercase;
   font-weight: 900;

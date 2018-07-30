@@ -20,6 +20,15 @@ p {
   margin-top: 0px;
   margin-bottom: 1rem; }
 
+a {
+  color: #000000;
+  text-decoration: none;
+  transition: .3s color; }
+
+a:hover {
+  color: #F7D31B;
+  transition: .3s color; }
+
 h1,
 h2,
 h3,
@@ -102,6 +111,39 @@ img {
 
 .link {
   text-decoration: none; }
+
+.image-link {
+  display: block; }
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 15px;
+  background-color: #F8F8F8;
+  border-radius: 5px; }
+
+.btn-primary {
+  background-color: #F7D31B;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 900;
+  transition: .3s background-color; }
+
+.btn-primary:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+  transition: .3s background-color; }
+
+.card {
+  margin-bottom: 2.5rem; }
+
+.card-title {
+  margin-top: 0; }
+
+.card-meta {
+  display: block;
+  margin-bottom: 1rem;
+  color: #b3b3b3; }
 
 .jumbotron-title {
   text-transform: uppercase;
