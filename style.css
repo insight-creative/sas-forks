@@ -106,3 +106,40 @@ img {
 .jumbotron-title {
   text-transform: uppercase;
   font-weight: 900; }
+
+.product-category {
+  background-color: #F8F8F8;
+  text-align: center; }
+
+.products .product {
+  text-align: center; }
+
+.products .product a {
+  color: #000000; }
+
+.product a:hover .star-rating {
+  color: #F7D31B;
+  transition: .3s color; }
+
+.woocommerce .products .star-rating {
+  margin-top: .5em;
+  margin-right: auto;
+  margin-left: auto;
+  color: #000000;
+  transition: .3s color; }
+
+.woocommerce ul.products li.product .woocommerce-loop-category__title {
+  color: #000000;
+  margin-bottom: 1em; }
+
+.woocommerce a.button {
+  background-color: #F7D31B;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: .8rem;
+  transition: .3s background-color; }
+
+.woocommerce a.button:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+  transition: .3s background-color; }

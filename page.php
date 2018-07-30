@@ -3,10 +3,6 @@
   if ( have_posts() ) : while ( have_posts() ) : the_post();
 ?>
 
-<?php if (class_exists('WooCommerce') && is_woocommerce()) : ?>
-  <?php woocommerce_breadcrumb(); ?>
-<?php endif; ?>
-
 <section class="jumbotron text-center">
   <div class="container">
     <h1 class="jumbotron-title"><?php the_title(); ?></h1>

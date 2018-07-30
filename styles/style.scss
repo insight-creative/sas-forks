@@ -8,7 +8,10 @@ Text Domain:        kmcgillivray
 */
 
 $gray: #222222;
+$light-gray: #F8F8F8;
 $white: #FFFFFF;
+$black: #000000;
+$yellow: #F7D31B;
 
 * {
   padding: 0;
@@ -111,4 +114,41 @@ img {
 .jumbotron-title {
   text-transform: uppercase;
   font-weight: 900;
+}
+.product-category {
+  background-color: $light-gray;
+  text-align: center;
+}
+.products .product {
+  text-align: center;
+}
+.products .product a {
+  color: $black;
+}
+.product a:hover .star-rating {
+  color: $yellow;
+  transition: .3s color;
+}
+.woocommerce .products .star-rating {
+  margin-top: .5em;
+  margin-right: auto;
+  margin-left: auto;
+  color: $black;
+  transition: .3s color;
+}
+.woocommerce ul.products li.product .woocommerce-loop-category__title {
+  color: $black;
+  margin-bottom: 1em;
+}
+.woocommerce a.button {
+  background-color: $yellow;
+  color: $white;
+  text-transform: uppercase;
+  font-size: .8rem;
+  transition: .3s background-color;
+}
+.woocommerce a.button:hover {
+  background-color: $black;
+  color: $white;
+  transition: .3s background-color;
 }
