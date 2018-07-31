@@ -1,6 +1,42 @@
 <?php get_header(); ?>
 
-<section class="container-narrow text-center">
+<?php
+
+class Slide {
+  function __construct($heading, $subheading, $image, $linkText, $link) {
+    $this->heading = $heading;
+    $this->subheading = $subheading;
+    $this->image = $image;
+    $this->linkText = $linkText;
+    $this->link = $link;
+  }
+}
+
+$slides = array(
+  new Slide('Engineered tough', 'Auto salvage forks • Engine pullers • Grapples • Quick couplers', 'sas-vulture-wire-picker-banner.jpg', 'SAS Extreme', '/product/sas-extreme-auto-processor/'),
+  new Slide('Engineered tough', 'Auto salvage forks • Engine pullers • Grapples • Quick couplers', 'homepage-banner4.jpg', 'Ultimate Adjustible Forks', '/product/ultimate-adjustable-forks/'),
+  new Slide('Engineered tough', 'Auto salvage forks • Engine pullers • Grapples • Quick couplers', 'sasforks-dumpster-banner.jpg', 'Dumpsters/Buckets', '/product-category/dumpsters-and-buckets/'),
+  new Slide('Engineered tough', 'Auto salvage forks • Engine pullers • Grapples • Quick couplers', 'sas-railroad-coupler-banner.jpg', 'Railroad Couplers', '/product/railroad-coupler/'),
+  new Slide('Engineered tough', 'Auto salvage forks • Engine pullers • Grapples • Quick couplers', 'sas-auto-salvage-forks-banner.jpg', 'Auto Salvage Forks', '/product-category/auto-salvage-forks/')
+);
+
+?>
+
+<ul id="slides">
+  <?php
+    foreach ($slides as $slide):
+  ?>
+    <li class="slide" style="background-image: url(<?php get_image_uri($slide->image); ?>);">
+      <div>
+        <span class="uppercase"><?php echo $slide->subheading ?></span>
+        <h2 class="jumbotron-title"><?php echo $slide->heading ?></h2>
+        <a class="btn btn-primary" href="<?php echo $slide->link ?>"><?php echo $slide->linkText ?></a>
+      </div>
+    </li>
+  <?php endforeach; ?>
+</ul>
+
+<section class="section container-narrow text-center">
   <p>SAS FORKS™ and attachments are built to the rigorous specifications resulting in a tool tough enough to handle severe conditions and heavier loads, this gives operators performance, durability, and an extended useful life. The ultimate the goal of SAS is to eliminate down time.</p>
 </section>
 

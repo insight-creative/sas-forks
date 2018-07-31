@@ -10,12 +10,12 @@
 }
 .btn-primary {
   background-color: $yellow;
-  color: $white;
+  color: $black;
   transition: .3s background-color;
 }
 .btn-primary:hover {
   background-color: $black;
-  color: $white;
+  color: $yellow;
   transition: .3s background-color;
 }
 .btn-inverse {
