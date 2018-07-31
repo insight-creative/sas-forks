@@ -18,6 +18,14 @@ img {
 .image-link {
   display: block; }
 
+.cover {
+  background-size: cover;
+  background-position: center; }
+
+.mv {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+
 @media (min-width: 30em) {
   .alignright {
     float: right;
@@ -79,8 +87,8 @@ ol li {
 blockquote {
   padding-left: .75rem;
   padding-right: .75rem;
-  font-size: .9rem;
-  line-height: 1.35;
+  font-size: 1.5rem;
+  line-height: 1.7;
   border-left: none; }
 
 hr {
@@ -90,6 +98,20 @@ hr {
   border-top: 0px;
   border-left: 0px;
   border-right: 0px; }
+
+.section-title {
+  margin-top: 0;
+  font-size: 2.5rem;
+  font-weight: bold; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+.small {
+  font-size: 1rem; }
+
+.lead {
+  font-size: 1.5rem; }
 
 .b {
   font-weight: bold; }
@@ -112,9 +134,19 @@ hr {
   margin-right: auto;
   padding: 15px; }
 
+.section {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
 .section-inverse {
   background-color: #222222;
   color: #FFFFFF; }
+
+.section-inverse a {
+  color: #FFFFFF; }
+
+.section-inverse a:hover {
+  color: #F7D31B; }
 
 .white {
   color: #FFFFFF; }
@@ -124,19 +156,30 @@ hr {
   margin-top: 1rem;
   padding: 10px 15px;
   background-color: #F8F8F8;
-  border-radius: 5px; }
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 900; }
 
 .btn-primary {
   background-color: #F7D31B;
   color: #FFFFFF;
-  text-transform: uppercase;
-  font-weight: 900;
   transition: .3s background-color; }
 
 .btn-primary:hover {
   background-color: #000000;
   color: #FFFFFF;
   transition: .3s background-color; }
+
+.btn-inverse {
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  transition: .3s all; }
+
+.btn-inverse:hover {
+  border-color: #F7D31B;
+  transition: .3s all; }
 
 .card {
   margin-bottom: 2.5rem; }

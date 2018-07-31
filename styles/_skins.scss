@@ -2,6 +2,13 @@
   background-color: $gray;
   color: $white;
 }
+.section-inverse a {
+  color: $white;
+}
+.section-inverse a:hover {
+  color: $yellow;
+}
+
 .white {
   color: $white;
 }

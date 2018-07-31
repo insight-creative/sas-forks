@@ -1,4 +1,4 @@
-<footer class="text-center section-inverse">
+<footer class="section section-inverse text-center">
   <div class="container">
     <a class="link b white" href="/"><?php bloginfo('name'); ?></a><br>
     <span>&copy; <?php echo date('Y'); ?> by <?php echo get_bloginfo('name'); ?> | website by <a class="white" target="_blank" href="https://insightcreative.com">Insight Creative</a></span>

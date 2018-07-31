@@ -1,3 +1,11 @@
+.cover {
+  background-size: cover;
+  background-position: center;
+}
+.mv {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 @media(min-width: 30em) {
   .alignright {
     float: right;

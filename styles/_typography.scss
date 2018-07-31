@@ -49,8 +49,8 @@ ol li {
 blockquote {
   padding-left: .75rem;
   padding-right: .75rem;
-  font-size: .9rem;
-  line-height: 1.35;
+  font-size: 1.5rem;
+  line-height: 1.7;
   border-left: none;
 }
 hr {
@@ -60,6 +60,20 @@ hr {
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
+}
+.section-title {
+  margin-top: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.small {
+  font-size: 1rem;
+}
+.lead {
+  font-size: 1.5rem;
 }
 .b {
   font-weight: bold;
