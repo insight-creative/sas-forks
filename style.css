@@ -11,6 +11,13 @@ Text Domain:        kmcgillivray
   margin: 0;
   box-sizing: border-box; }
 
+img {
+  max-width: 100%;
+  height: auto; }
+
+.image-link {
+  display: block; }
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
@@ -74,9 +81,14 @@ hr {
   border-left: 0px;
   border-right: 0px; }
 
-img {
-  max-width: 100%;
-  height: auto; }
+.b {
+  font-weight: bold; }
+
+.link {
+  text-decoration: none; }
+
+.text-center {
+  text-align: center; }
 
 .container {
   max-width: 1180px;
@@ -90,30 +102,12 @@ img {
   margin-right: auto;
   padding: 15px; }
 
-@media (min-width: 30em) {
-  .alignright {
-    float: right;
-    padding-left: 30px;
-    padding-bottom: 30px; } }
-
-.text-center {
-  text-align: center; }
-
 .section-inverse {
   background-color: #222222;
   color: #FFFFFF; }
 
 .white {
   color: #FFFFFF; }
-
-.b {
-  font-weight: bold; }
-
-.link {
-  text-decoration: none; }
-
-.image-link {
-  display: block; }
 
 .btn {
   display: inline-block;
@@ -144,10 +138,6 @@ img {
   display: block;
   margin-bottom: 1rem;
   color: #b3b3b3; }
-
-.jumbotron-title {
-  text-transform: uppercase;
-  font-weight: 900; }
 
 .product-category {
   background-color: #F8F8F8;
