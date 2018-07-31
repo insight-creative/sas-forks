@@ -23,14 +23,60 @@ jQuery(document).ready(function($) {
   //   }
   // });
 
+  var playing = true;
   var slides = document.querySelectorAll('#slides .slide');
+  var pauseButton = document.getElementById('pause');
+  var next = document.getElementById('next');
+  var previous = document.getElementById('previous');
   var currentSlide = 0;
-  slides[currentSlide].className = 'slide showing';
   var slideInterval = setInterval(nextSlide, 5000);
 
+  var controls = document.querySelectorAll('.controls');
+  for(var i=0; i<controls.length; i++){
+    controls[i].style.display = 'inline-block';
+  }
+
+  function pauseSlideshow() {
+    pauseButton.innerHTML = '<i class="fa fa-play"></i> <span class="sr-only">Play</span>';
+    playing = false;
+    clearInterval(slideInterval);
+  }
+
+  function playSlideshow() {
+    pauseButton.innerHTML = '<i class="fa fa-pause"></i> <span class="sr-only">Pause</span>';
+    playing = true;
+    slideInterval = setInterval(nextSlide,2000);
+  }
+
+  pauseButton.onclick = function() {
+    if(playing) {
+      pauseSlideshow();
+    } else {
+      playSlideshow();
+    }
+  }
+
+  next.onclick = function() {
+    pauseSlideshow();
+    nextSlide();
+  }
+
+  previous.onclick = function() {
+      pauseSlideshow();
+      previousSlide();
+  }
+
   function nextSlide() {
+    goToSlide(currentSlide+1);
+  }
+
+  function previousSlide() {
+    goToSlide(currentSlide-1);
+  }
+
+  function goToSlide(n) {
     slides[currentSlide].className = 'slide';
-    currentSlide = (currentSlide+1)%slides.length;
+    currentSlide = (n+slides.length)%slides.length;
     slides[currentSlide].className = 'slide showing';
   }
 

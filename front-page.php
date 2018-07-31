@@ -22,19 +22,27 @@ $slides = array(
 
 ?>
 
-<ul id="slides">
-  <?php
-    foreach ($slides as $slide):
-  ?>
-    <li class="slide" style="background-image: url(<?php get_image_uri($slide->image); ?>);">
-      <div>
-        <span class="uppercase"><?php echo $slide->subheading ?></span>
-        <h2 class="jumbotron-title"><?php echo $slide->heading ?></h2>
-        <a class="btn btn-primary" href="<?php echo $slide->link ?>"><?php echo $slide->linkText ?></a>
-      </div>
-    </li>
-  <?php endforeach; ?>
-</ul>
+<section>
+  <ul id="slides">
+    <?php
+      $i = 0;
+      foreach ($slides as $slide):
+    ?>
+      <li class="slide <?php if ($i == 0) { echo 'showing'; } ?>" style="background-image: url(<?php get_image_uri($slide->image); ?>);">
+        <div>
+          <span class="uppercase"><?php echo $slide->subheading ?></span>
+          <h2 class="jumbotron-title"><?php echo $slide->heading ?></h2>
+          <a class="btn btn-primary" href="<?php echo $slide->link ?>"><?php echo $slide->linkText ?></a>
+        </div>
+      </li>
+    <?php $i++; endforeach; ?>
+  </ul>
+  <div class="controls">
+    <button class="slider-control" id="previous"><i class="fa fa-chevron-left"></i> <span class="sr-only">Previous</span></button>
+    <button class="slider-control" id="pause"><i class="fa fa-pause"></i> <span class="sr-only">Pause</span></button>
+    <button class="slider-control" id="next"><i class="fa fa-chevron-right"></i> <span class="sr-only">Next</span></button>
+  </div>
+</section>
 
 <section class="section container-narrow text-center">
   <p>SAS FORKS™ and attachments are built to the rigorous specifications resulting in a tool tough enough to handle severe conditions and heavier loads, this gives operators performance, durability, and an extended useful life. The ultimate the goal of SAS is to eliminate down time.</p>
