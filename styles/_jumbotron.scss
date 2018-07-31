@@ -1,4 +1,12 @@
+.jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-size: cover;
+  background-position: center;
+  background-color: $gray;
+}
 .jumbotron-title {
   text-transform: uppercase;
   font-weight: 900;
+  color: $white;
 }

@@ -18,6 +18,16 @@ img {
 .image-link {
   display: block; }
 
+@media (min-width: 30em) {
+  .alignright {
+    float: right;
+    padding-left: 30px;
+    padding-bottom: 30px; }
+  .alignleft {
+    float: left;
+    padding-right: 30px;
+    padding-bottom: 30px; } }
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
@@ -138,6 +148,23 @@ hr {
   display: block;
   margin-bottom: 1rem;
   color: #b3b3b3; }
+
+.navbar {
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-size: cover;
+  background-position: center;
+  background-color: #222222; }
+
+.jumbotron-title {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #FFFFFF; }
 
 .product-category {
   background-color: #F8F8F8;
