@@ -1,6 +1,7 @@
 .jumbotron {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  margin-bottom: 2rem;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
   background-size: cover;
   background-position: center;
   background-color: $gray;
@@ -9,4 +10,12 @@
   text-transform: uppercase;
   font-weight: 900;
   color: $white;
+}
+@media(min-width: 60em) {
+  .jumbotron {
+    padding-top: 7rem;
+  }
+  .jumbotron-title {
+    font-size: 6rem;
+  }
 }

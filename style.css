@@ -150,13 +150,54 @@ hr {
   color: #b3b3b3; }
 
 .navbar {
+  position: absolute;
   top: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999; }
+
+.navbar-header {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px; }
+
+.logo {
+  max-width: 100px; }
+
+.navbar-toggle {
+  color: #F7D31B;
+  cursor: pointer; }
+
+.navbar-nav {
+  display: none;
+  padding-left: 0;
+  list-style: none;
+  background-color: #FFFFFF; }
+
+.navbar-nav li {
+  margin-bottom: 0; }
+
+.navbar-nav li a {
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #bbbbbb; }
+
+.navbar-nav .menu-item-has-children ul {
+  list-style: none;
+  padding-left: 0; }
+
+.navbar-nav .menu-item-has-children ul li a {
+  padding-left: 30px;
+  list-style: none; }
 
 .jumbotron {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  margin-bottom: 2rem;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
   background-size: cover;
   background-position: center;
   background-color: #222222; }
@@ -165,6 +206,12 @@ hr {
   text-transform: uppercase;
   font-weight: 900;
   color: #FFFFFF; }
+
+@media (min-width: 60em) {
+  .jumbotron {
+    padding-top: 7rem; }
+  .jumbotron-title {
+    font-size: 6rem; } }
 
 .product-category {
   background-color: #F8F8F8;

@@ -3,9 +3,11 @@
   if ( have_posts() ) : while ( have_posts() ) : the_post();
 ?>
 
-<?php if (has_post_thumbnail( $post->ID ) ): ?>
-  <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail'); ?>
-<?php endif; ?>
+<?php
+  if (has_post_thumbnail( $post->ID ) ) {
+    $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'single-post-thumbnail');
+  }
+?>
 
 <section class="jumbotron text-center" style="background-image: url(<?php echo $image[0]; ?>);">
   <div class="container">
