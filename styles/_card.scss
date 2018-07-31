@@ -1,8 +1,12 @@
 .card {
   margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid lighten($gray, 60%);
 }
 .card-title {
   margin-top: 0;
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
 .card-meta {
   display: block;

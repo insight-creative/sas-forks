@@ -48,27 +48,35 @@ $slides = array(
   <p>SAS FORKS™ and attachments are built to the rigorous specifications resulting in a tool tough enough to handle severe conditions and heavier loads, this gives operators performance, durability, and an extended useful life. The ultimate the goal of SAS is to eliminate down time.</p>
 </section>
 
-<section class="container">
-  <h2 class="b text-center uppercase">Our core services</h2>
-  <i class="fa fa-check"></i>
-  <h3 class="b uppercase">Our specialty</h3>
-  <p>We specialize in manufacturing 6' to 18' fork assemblies for use in the auto salvage industry. Our extensive experience in the auto salvage market, where operators are especially hard on their equipment, has helped us develop insights into other industry segments which demand performance from their forks in the most extreme environments.</p>
+<section class="section container">
+  <h2 class="b text-center uppercase mv">Our core services</h2>
+  <hr>
+  <div class="cf">
+    <div class="col-50">
+      <i class="fa fa-check"></i>
+      <h3 class="b uppercase">Our specialty</h3>
+      <p>We specialize in manufacturing 6' to 18' fork assemblies for use in the auto salvage industry. Our extensive experience in the auto salvage market, where operators are especially hard on their equipment, has helped us develop insights into other industry segments which demand performance from their forks in the most extreme environments.</p>
 
-  <i class="fa fa-arrows-alt"></i>
-  <h3 class="b uppercase">Built for your equipment</h3>
-  <p>SAS FORKS and attachments are manufactured to fit many types of equipment, including wheel loaders, excavators and forklifts (fork trucks). We engineer custom products for telehandlers, skid steers and backhoes.</p>
+      <i class="fa fa-arrows-alt"></i>
+      <h3 class="b uppercase">Built for your equipment</h3>
+      <p>SAS FORKS and attachments are manufactured to fit many types of equipment, including wheel loaders, excavators and forklifts (fork trucks). We engineer custom products for telehandlers, skid steers and backhoes.</p>
 
-  <i class="fa fa-share-alt"></i>
-  <h3 class="b uppercase">Multiple applications</h3>
-  <p>Products are delivered with a wide variety of functions. Fixed and adjustable widths of forks and carriages as well as the SAS Quick Coupler System for wheel loaders, for use in multiple material handling applications including rock quarries, oil fields, steel mills and defense applications.</p>
-  <img src="<?php get_image_uri('sas-product-collage.jpg'); ?>" alt="SAS products">
-
+      <i class="fa fa-share-alt"></i>
+      <h3 class="b uppercase">Multiple applications</h3>
+      <p>Products are delivered with a wide variety of functions. Fixed and adjustable widths of forks and carriages as well as the SAS Quick Coupler System for wheel loaders, for use in multiple material handling applications including rock quarries, oil fields, steel mills and defense applications.</p>
+    </div>
+    <div class="col-50 text-center">
+      <img src="<?php get_image_uri('sas-product-collage.jpg'); ?>" alt="SAS products">
+    </div>
+  </div>
 </section>
 
 <section class="section cover" style="background-image: url(<?php get_image_uri('distorted-backdrop.jpg'); ?>);">
-  <div class="container">
-    <img src="<?php get_image_uri('sas-dumpster.png'); ?>" alt="Dumpster bucket">
-    <div class="text-center">
+  <div class="container cf">
+    <div class="col-50">
+      <img src="<?php get_image_uri('sas-dumpster.png'); ?>" alt="Dumpster bucket">
+    </div>
+    <div class="col-50 text-center">
       <h2 class="uppercase"><span class="small b">Product spotlight</span><br><span class="b">Dumpsters</span><br>for wheel loaders</h2>
       <p>Use as collection bins for engines, transmissions, wheels, wire and or cores. Smaller sizes save space in the processing area on site.</p>
       <a class="btn btn-primary" href="#">Learn more</a>
