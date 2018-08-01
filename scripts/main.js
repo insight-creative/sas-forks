@@ -4,24 +4,24 @@ jQuery(document).ready(function($) {
   $navbarToggle.click(function() {
     $navbarNav.slideToggle();
   });
-  // var $submenu = $('.submenu');
-  // var $dropdownToggle = $('.menu-item-has-children');
-  // $submenu.hide();
-  //
-  // $dropdownToggle.click(function(e) {
-  //   e.preventDefault();
-  //   $currentToggle = $(this);
-  //   $currentSubmenu = $currentToggle.parent('li').find('.submenu');
-  //   $submenu.hide();
-  //   if ($currentToggle.hasClass('open')) {
-  //     $currentSubmenu.hide();
-  //     $currentToggle.removeClass('open');
-  //   } else {
-  //     $dropdownToggle.removeClass('open');
-  //     $currentToggle.addClass('open');
-  //     $currentSubmenu.show();
-  //   }
-  // });
+  var $submenu = $('.submenu');
+  var $dropdownToggle = $('.menu-item-has-children');
+  $submenu.hide();
+
+  $dropdownToggle.click(function(e) {
+    e.preventDefault();
+    $currentToggle = $(this);
+    $currentSubmenu = $currentToggle.parent('li').find('.submenu');
+    $submenu.hide();
+    if ($currentToggle.hasClass('open')) {
+      $currentSubmenu.hide();
+      $currentToggle.removeClass('open');
+    } else {
+      $dropdownToggle.removeClass('open');
+      $currentToggle.addClass('open');
+      $currentSubmenu.show();
+    }
+  });
 
   var playing = true;
   var slides = document.querySelectorAll('#slides .slide');
