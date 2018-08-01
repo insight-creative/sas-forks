@@ -15,9 +15,15 @@
  * @version 3.4.0
  */
 
-defined( 'ABSPATH' ) || exit;
+defined( 'ABSPATH' ) || exit; ?>
 
-get_header( 'shop' );
+<section class="jumbotron text-center" style="background-image: url(<?php echo $image[0]; ?>);">
+  <div class="container">
+    <h1 class="jumbotron-title">Products</h1>
+  </div>
+</section>
+
+<?php get_header( 'shop' );
 
 /**
  * Hook: woocommerce_before_main_content.
@@ -29,6 +35,7 @@ get_header( 'shop' );
 do_action( 'woocommerce_before_main_content' );
 
 ?>
+
 <section class="container">
   <div>
   	<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>

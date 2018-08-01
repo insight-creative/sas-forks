@@ -22,6 +22,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' ); ?>
 
+<section class="jumbotron text-center" style="background-image: url(<?php echo $image[0]; ?>);">
+  <div class="container">
+    <h1 class="jumbotron-title">Products</h1>
+  </div>
+</section>
+
 <section class="container">
 
 	<?php
