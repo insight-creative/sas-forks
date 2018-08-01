@@ -276,8 +276,7 @@ hr {
   cursor: pointer; }
 
 .navbar-social {
-  display: none;
-  visibility: hidden; }
+  display: none; }
 
 .navbar-nav {
   position: absolute;
