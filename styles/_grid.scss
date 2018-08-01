@@ -11,15 +11,21 @@
   padding: 15px;
 }
 @media(min-width: 30em) {
-  .col-70 {
+  .col-90 {
     float: left;
-    width: 70%;
+    width: 90%;
     padding-left: 15px;
     padding-right: 15px;
   }
-  .col-30 {
+  .col-80 {
     float: left;
-    width: 30%;
+    width: 80%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-70 {
+    float: left;
+    width: 70%;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -29,6 +35,25 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+  .col-30 {
+    float: left;
+    width: 30%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-20 {
+    float: left;
+    width: 20%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-10 {
+    float: left;
+    width: 10%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
 }
 
 .section {

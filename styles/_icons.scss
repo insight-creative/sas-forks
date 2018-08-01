@@ -1,0 +1,12 @@
+.icon-highlight {
+  display: inline-block;
+  background-color: $yellow;
+  padding: 1.2rem;
+  border-radius: 100%;
+  border: 5px solid $light-gray;
+}
+.icon-highlight .fa {
+  display: block;
+  line-height: 1.2rem;
+  font-size: 1.2rem;
+}
