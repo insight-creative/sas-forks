@@ -25,11 +25,12 @@
 }
 .btn-inverse {
   background-color: transparent;
-  color: $white;
-  border: 2px solid $white;
+  color: $white !important;
+  border: 2px solid $white !important;
   transition: .3s all;
 }
 .btn-inverse:hover {
-  border-color: $yellow;
+  border-color: $yellow !important;
+  color: $yellow !important;
   transition: .3s all;
 }

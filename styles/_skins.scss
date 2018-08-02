@@ -3,10 +3,11 @@
   color: $white;
 }
 .section-inverse a {
-  color: $white;
+  color: $yellow;
+  border-bottom: 0;
 }
 .section-inverse a:hover {
-  color: $yellow;
+  color: $white;
 }
 
 .white {
