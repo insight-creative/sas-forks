@@ -1,4 +1,5 @@
-.btn {
+.btn,
+.wpcf7-submit {
   display: inline-block;
   margin-top: 1rem;
   padding: 10px 15px;
@@ -7,13 +8,17 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 900;
+  cursor: pointer;
+  border: none;
 }
-.btn-primary {
+.btn-primary,
+.wpcf7-submit {
   background-color: $yellow;
   color: $black;
   transition: .3s background-color;
 }
-.btn-primary:hover {
+.btn-primary:hover,
+.wpcf7-submit:hover {
   background-color: $black;
   color: $yellow;
   transition: .3s background-color;

@@ -204,7 +204,8 @@ hr {
 .white {
   color: #FFFFFF; }
 
-.btn {
+.btn,
+.wpcf7-submit {
   display: inline-block;
   margin-top: 1rem;
   padding: 10px 15px;
@@ -212,14 +213,18 @@ hr {
   border-radius: 5px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 900; }
+  font-weight: 900;
+  cursor: pointer;
+  border: none; }
 
-.btn-primary {
+.btn-primary,
+.wpcf7-submit {
   background-color: #F7D31B;
   color: #000000;
   transition: .3s background-color; }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.wpcf7-submit:hover {
   background-color: #000000;
   color: #F7D31B;
   transition: .3s background-color; }
@@ -256,6 +261,13 @@ hr {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9999;
   height: 90px; }
+
+.admin-bar .navbar {
+  top: 40px; }
+
+@media (min-width: 30em) {
+  .admin-bar .navbar {
+    top: 30px; } }
 
 .navbar-header {
   max-width: 1180px;
@@ -428,6 +440,16 @@ hr {
   display: block;
   line-height: 1.2rem;
   font-size: 1.2rem; }
+
+div.wpcf7 {
+  background-color: #F8F8F8;
+  padding: 20px; }
+
+input,
+select,
+textarea {
+  padding: 10px;
+  width: 100%; }
 
 .product-category {
   background-color: #F8F8F8;
