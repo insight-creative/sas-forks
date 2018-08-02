@@ -24,8 +24,10 @@
     <p class="tc"><?php _e('Blog coming soon!'); ?></p>
   <?php endif; ?>
 
-  <?php previous_posts_link( 'Newer posts' ); ?>
-  <?php next_posts_link( 'Older posts' ); ?>
+  <div class="mv text-center">
+    <?php previous_posts_link( 'Newer posts' ); ?>
+    <?php next_posts_link( 'Older posts' ); ?>
+  </div>
 </section>
 
 <?php get_footer(); ?>

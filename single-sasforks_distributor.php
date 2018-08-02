@@ -28,7 +28,9 @@
   </div>
 
   <div class="col-50">
-    <img src="<?php the_field('distributor_logo'); ?>" alt="<?php the_field('contact_name'); ?>">
+    <?php if (get_field('distributor_logo')): ?>
+      <img src="<?php the_field('distributor_logo'); ?>" alt="<?php the_field('name'); ?>">
+    <?php endif; ?>
     <address>
       <strong><?php the_field('name'); ?></strong><br>
       <?php the_field('address'); ?>
