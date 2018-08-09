@@ -12,12 +12,24 @@
   color: $yellow;
   transition: .3s color;
 }
+.product .count {
+  background-color: transparent;
+}
 .woocommerce .products .star-rating {
   margin-top: .5em;
   margin-right: auto;
   margin-left: auto;
   color: $black;
   transition: .3s color;
+}
+.woocommerce .woocommerce-breadcrumb {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
+.woocommerce .woocommerce-breadcrumb a {
+  border-bottom: 0;
 }
 .woocommerce ul.products li.product .woocommerce-loop-category__title {
   color: $black;
@@ -34,4 +46,11 @@
   background-color: $black;
   color: $white;
   transition: .3s background-color;
+}
+.woocommerce div.product div.summary {
+  float: none;
+  width: 100%;
+}
+.woocommerce div.product div.images {
+  display: none;
 }
