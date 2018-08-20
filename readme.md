@@ -14,13 +14,12 @@ If you already have a Wordpress installation set up:
 
 ## Deploying
 
-Development:
+1. Log in to Insight's [Cloudways](cloudways.com) account.
+2. Find the SAS Forks application under the application list.
+3. Log in to the server via SSH using the credentials found under "Application Credentials": `ssh username@ipaddress`
+4. Navigate to `wp-content/themes/sas-forks` and run `git pull`
 
-1. Coming soon...
-
-Production:
-
-1. Coming soon...
+Alternatively, log in via FTP and upload the updated theme files to the server.
 
 ## Contributing
 
