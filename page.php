@@ -9,18 +9,20 @@
   }
 ?>
 
-<section class="jumbotron text-center" style="background-image: url(<?php echo $image[0]; ?>);">
-  <div class="container">
-    <h1 class="jumbotron-title"><?php the_title(); ?></h1>
-  </div>
-</section>
+<main role="main">
+  <section class="jumbotron text-center" style="background-image: url(<?php echo $image[0]; ?>);">
+    <div class="container">
+      <h1 class="jumbotron-title"><?php the_title(); ?></h1>
+    </div>
+  </section>
 
-<section class="container">
-  <?php the_content(); ?>
+  <section class="container">
+    <?php the_content(); ?>
 
-  <?php endwhile; else: ?>
-  	<p><?php _e('Sorry, this page does not exist.'); ?></p>
-  <?php endif; ?>
-</section>
+    <?php endwhile; else: ?>
+    	<p><?php _e('Sorry, this page does not exist.'); ?></p>
+    <?php endif; ?>
+  </section>
+</main>
 
 <?php get_footer(); ?>

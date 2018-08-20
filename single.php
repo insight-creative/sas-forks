@@ -9,22 +9,24 @@
   }
 ?>
 
-<section class="jumbotron text-center section-inverse" style="background-image: url(<?php get_image_uri('sas-news-banner.jpg'); ?>);">
-  <div class="container-narrow">
-    <h1 class="jumbotron-title jumbotron-title-small"><?php the_title(); ?></h1>
-    <p class="mt0 fw2"><?php echo get_the_time('F jS, Y'); ?></p>
-  </div>
-</section>
+<article role="main">
+  <section class="jumbotron text-center section-inverse" style="background-image: url(<?php get_image_uri('sas-news-banner.jpg'); ?>);">
+    <div class="container-narrow">
+      <h1 class="jumbotron-title jumbotron-title-small"><?php the_title(); ?></h1>
+      <p class="mt0 fw2"><?php echo get_the_time('F jS, Y'); ?></p>
+    </div>
+  </section>
 
-<section class="section container-narrow">
-  <?php
-    the_post_thumbnail('full');
-    the_content();
-  ?>
+  <section class="section container-narrow">
+    <?php
+      the_post_thumbnail('full');
+      the_content();
+    ?>
 
-  <?php endwhile; else: ?>
-  	<p><?php _e('Sorry, this page does not exist.'); ?></p>
-  <?php endif; ?>
-</section>
+    <?php endwhile; else: ?>
+    	<p><?php _e('Sorry, this page does not exist.'); ?></p>
+    <?php endif; ?>
+  </section>
+</article>
 
 <?php get_footer(); ?>

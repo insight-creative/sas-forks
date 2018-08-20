@@ -513,3 +513,6 @@ textarea {
 
 .woocommerce div.product div.images {
   display: none; }
+
+.wc-tabs a {
+  border-bottom: 0; }

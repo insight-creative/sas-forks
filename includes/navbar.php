@@ -1,4 +1,4 @@
-<nav class="navbar">
+<nav role="navigation" class="navbar">
   <div class="navbar-header">
     <a href="/"><img class="logo" src="<?php get_image_uri('sas-forks-logo3.png'); ?>" alt="SAS Forks"></a>
     <?php
