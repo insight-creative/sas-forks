@@ -1,11 +1,10 @@
 <?php
 
 // Load fonts and styles into theme
-
-// If loading fonts from Google Fonts or Typekit, put URL here
-$font_url = 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i';
-
 function theme_styles() {
+
+  // If loading fonts from Google Fonts or Typekit, put URL here
+  $font_url = 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i';
 
   // Gets the theme version and automatically appends it to the stylesheet url
   $theme = wp_get_theme();
