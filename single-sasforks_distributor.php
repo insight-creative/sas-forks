@@ -38,7 +38,7 @@
       </address>
 
       <p>
-        Email: <a href="mailto:<?php the_field('contact_email'); ?>"><?php the_field('contact_name'); ?></a><br>
+        Email: <a href="mailto:<?php the_field('contact_email'); ?>"><?php the_field('contact_name'); ?></a> <a href="mailto:<?php the_field('contact_2_email'); ?>"><?php the_field('contact_2_name'); ?></a><br>
         Phone: <?php the_field('contact_phone_number'); ?><br>
         <?php if (get_field('contact_fax')): ?>Fax: <?php the_field('contact_fax'); ?><br><?php endif; ?>
         <a href="<?php the_field('contact_website'); ?>">Visit our website</a>
