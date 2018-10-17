@@ -112,7 +112,7 @@ $slides = array(
       <p class="lead">We're here to help you—contact SAS Forks today!</p>
       <img class="mv" src="<?php get_image_uri('sas-forks-logo3.png'); ?>" alt="SAS Forks">
       <p class="lead"><a href="tel:877-727-3675">(877) 727-3675</a></p>
-      <a class="btn btn-inverse" href="/locations">Contact us now</a>
+      <a class="btn btn-inverse" href="/contact/sas-forks/">Contact us now</a>
     </div>
   </section>
 </main>
