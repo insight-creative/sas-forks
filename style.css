@@ -19,12 +19,6 @@ img {
   display: block;
   border-bottom: 0; }
 
-::selection {
-  background: rgba(247, 211, 27, 0.6); }
-
-::-moz-selection {
-  background: rgba(247, 211, 27, 0.6); }
-
 .cf:before, .cf:after {
   content: " ";
   display: table; }
@@ -239,6 +233,12 @@ hr {
 
 .white {
   color: #FFFFFF; }
+
+::selection {
+  background: rgba(247, 211, 27, 0.6); }
+
+::-moz-selection {
+  background: rgba(247, 211, 27, 0.6); }
 
 .btn,
 .wpcf7-submit {
