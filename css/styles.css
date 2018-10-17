@@ -154,20 +154,17 @@ hr {
 
 .flex-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around; }
 
 .flex-container-reverse {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: row;
   justify-content: space-around; }
 
 @media (min-width: 60em) {
-  .flex-container {
-    flex-direction: row; }
-
   .flex-container-reverse {
-    flex-direction: row; }
+    flex-direction: column-reverse; }
 
   .col-90 {
     float: left;
@@ -196,12 +193,6 @@ hr {
   .col-30 {
     float: left;
     width: 30%;
-    padding-left: 15px;
-    padding-right: 15px; }
-
-  .col-25 {
-    float: left;
-    width: 25%;
     padding-left: 15px;
     padding-right: 15px; }
 
@@ -269,16 +260,6 @@ hr {
   border-color: #F7D31B !important;
   color: #F7D31B !important;
   transition: .3s all; }
-
-.cn-button {
-  background: #F7D31B !important;
-  color: #000000 !important;
-  transition: .2s ease all !important; }
-
-.cn-button:hover {
-  background: #000000 !important;
-  color: #F7D31B !important;
-  transition: .2s ease all !important; }
 
 .card {
   margin-bottom: 2.5rem;
@@ -562,14 +543,4 @@ textarea {
 .wc-tabs a {
   border-bottom: 0; }
 
-#privacyPolicy {
-  margin-top: 100px; }
-
-/* Locations Page styling  */
-.contactLogo {
-  margin-top: 20px; }
-
-.firstMap {
-  margin-bottom: 50px; }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */

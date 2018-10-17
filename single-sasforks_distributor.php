@@ -20,7 +20,7 @@
     <?php the_content(); ?>
   </section>
 
-  <section class="container cf">
+  <section class="container cf flex-container-reverse">
     <div class="col-50">
       <?php
         $contactId = get_field('contact_form')[0]->ID;
@@ -41,7 +41,7 @@
         Email: <a href="mailto:<?php the_field('contact_email'); ?>"><?php the_field('contact_name'); ?></a> <a href="mailto:<?php the_field('contact_2_email'); ?>"><?php the_field('contact_2_name'); ?></a><br>
         Phone: <?php the_field('contact_phone_number'); ?><br>
         <?php if (get_field('contact_fax')): ?>Fax: <?php the_field('contact_fax'); ?><br><?php endif; ?>
-        <a href="<?php the_field('contact_website'); ?>">Visit our website</a>
+        <a href="<?php the_field('contact_website');?> id="distributorSite"">Website</a>
       </p>
     </div>
 
