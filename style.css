@@ -571,11 +571,14 @@ textarea {
 #privacyPolicy {
   margin-top: 100px; }
 
-/* Locations Page styling  */
+/* Distributors Page styling  */
 .contactLogo {
   margin-top: 20px; }
 
 .firstMap {
   margin-bottom: 50px; }
+
+#stateSearch {
+  margin: 100px 0 100px 0; }
 
 /*# sourceMappingURL=style.css.map */

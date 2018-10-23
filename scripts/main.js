@@ -84,3 +84,20 @@ jQuery(document).ready(function($) {
 
 
 });
+
+// Script for our state search submit button
+var stateSearchButton = document.querySelector("#searchButton");
+stateSearchButton.addEventListener("click", stateSearch, false);
+//function to check if lower michigan was selected, they are the only other us distributor
+function stateSearch () {
+    var selectedState = document.querySelector("#stateList").value;
+
+    if (selectedState === "Lower Michigan") {
+      stateSearchButton.setAttribute("href", "http://localhost/sasForksTest/contact/michigan-distributor/");
+    }else if (selectedState === "Select") {
+      document.querySelector("#selectError").innerHTML= "You must select a state so we can guide you to the proper distributor!";
+      Object.assign(selectError.style,{background: "#F8F8F8",margin:"10px",padding:"20px"});
+    }else{
+      stateSearchButton.setAttribute("href", "http://localhost/sasForksTest/contact/sas-forks/");
+  }
+}
