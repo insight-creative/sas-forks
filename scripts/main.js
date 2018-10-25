@@ -93,11 +93,11 @@ function stateSearch () {
     var selectedState = document.querySelector("#stateList").value;
 
     if (selectedState === "Lower Michigan") {
-      stateSearchButton.setAttribute("href", "http://localhost/sasForksTest/contact/michigan-distributor/");
+      stateSearchButton.setAttribute("href", "/contact/michigan-distributor/");
     }else if (selectedState === "Select") {
       document.querySelector("#selectError").innerHTML= "You must select a state so we can guide you to the proper distributor!";
       Object.assign(selectError.style,{background: "#F8F8F8",margin:"10px",padding:"20px"});
     }else{
-      stateSearchButton.setAttribute("href", "http://localhost/sasForksTest/contact/sas-forks/");
+      stateSearchButton.setAttribute("href", "/contact/sas-forks/");
   }
 }
