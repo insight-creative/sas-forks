@@ -92,7 +92,7 @@ $slides = array(
       <div class="col-50 text-center">
         <h2 class="uppercase"><span class="small b">Product spotlight</span><br><span class="b">Dumpsters</span><br>for wheel loaders</h2>
         <p>Use as collection bins for engines, transmissions, wheels, wire and or cores. Smaller sizes save space in the processing area on site.</p>
-        <a class="btn btn-primary" href="#">Learn more</a>
+        <a class="btn btn-primary" href="/product/forklift-dumpsters/">Learn more</a>
       </div>
     </div>
   </section>
@@ -112,7 +112,7 @@ $slides = array(
       <p class="lead">We're here to help you—contact SAS Forks today!</p>
       <img class="mv" src="<?php get_image_uri('sas-forks-logo3.png'); ?>" alt="SAS Forks">
       <p class="lead"><a href="tel:877-727-3675">(877) 727-3675</a></p>
-      <a class="btn btn-inverse" href="/contact">Contact us now</a>
+      <a class="btn btn-inverse" href="/contact/sas-forks/">Contact us now</a>
     </div>
   </section>
 </main>

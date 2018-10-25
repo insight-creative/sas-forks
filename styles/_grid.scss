@@ -10,7 +10,23 @@
   margin-right: auto;
   padding: 15px;
 }
-@media(min-width: 30em) {
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.flex-container-reverse{
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-around;
+}
+@media(min-width: 60em) {
+  .flex-container{
+    flex-direction: row;
+  }
+  .flex-container-reverse{
+  	flex-direction: row;
+  }
   .col-90 {
     float: left;
     width: 90%;
@@ -38,6 +54,12 @@
   .col-30 {
     float: left;
     width: 30%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-25 {
+    float: left;
+    width: 25%;
     padding-left: 15px;
     padding-right: 15px;
   }
