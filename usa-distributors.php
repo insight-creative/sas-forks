@@ -18,7 +18,7 @@ get_header();
   <section class="flex-container section container">
     <div class="col-50" id="stateSearch">
       <h2>Select your state to find a distributor near you</h2>
-        <select id="stateList" name = "states" required>
+        <select class="choiceList" name = "states" required>
           <option value="Select">Select your state</option>
           <option value="Alabama">Alabama</option>
           <option value="Alaska">Alaska</option>
@@ -73,7 +73,7 @@ get_header();
           <option value="Wyoming">Wyoming</option>
         </select>
         <p id=selectError></p>
-        <a class="btn btn-primary" id="searchButton">Find a distributor</a>
+        <a class="btn btn-primary searchButton">Find a distributor</a>
     </div>
   </section>
 </main>
