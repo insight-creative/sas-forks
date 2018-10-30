@@ -91,6 +91,7 @@ stateSearchButton.addEventListener("click", stateSearch, false);
 //function to check if lower michigan was selected, they are the only other us distributor
 
 function stateSearch () {
+    //grab the value of our dropdown selection
     var selectedState = document.querySelector(".choiceList").value;
 
     if (selectedState === "Select") {
