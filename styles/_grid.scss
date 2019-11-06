@@ -10,7 +10,20 @@
   margin-right: auto;
   padding: 15px;
 }
-@media(min-width: 30em) {
+.flex-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.flex-container-reverse{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+@media(min-width: 60em) {
+  .flex-container{
+  	flex-direction: column-reverse;
+  }
   .col-90 {
     float: left;
     width: 90%;

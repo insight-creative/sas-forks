@@ -20,7 +20,7 @@
     <?php the_content(); ?>
   </section>
 
-  <section class="container cf">
+  <section class="container cf flex-container">
     <div class="col-50">
       <?php
         $contactId = get_field('contact_form')[0]->ID;
