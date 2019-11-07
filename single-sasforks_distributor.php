@@ -20,7 +20,11 @@
     <?php the_content(); ?>
   </section>
 
+<<<<<<< HEAD
   <section class="container cf flex-container">
+=======
+  <section class="container cf flex-container-reverse">
+>>>>>>> aa4a6441f4110bb4ab097c9a121178bcdcd76891
     <div class="col-50">
       <?php
         $contactId = get_field('contact_form')[0]->ID;
@@ -38,10 +42,10 @@
       </address>
 
       <p>
-        Email: <a href="mailto:<?php the_field('contact_email'); ?>"><?php the_field('contact_name'); ?></a> <a href="mailto:<?php the_field('contact_2_email'); ?>"><?php the_field('contact_2_name'); ?></a><br>
+        Email: <a href="mailto:<?php the_field('contact_email'); ?>?subject=Inquiry%20from%20sasforks.com"><?php the_field('contact_name'); ?></a> <a href="mailto:<?php the_field('contact_2_email'); ?>?subject=Inquiry%20from%20sasforks.com"><?php the_field('contact_2_name'); ?></a><br>
         Phone: <?php the_field('contact_phone_number'); ?><br>
         <?php if (get_field('contact_fax')): ?>Fax: <?php the_field('contact_fax'); ?><br><?php endif; ?>
-        <a href="<?php the_field('contact_website'); ?>">Visit our website</a>
+        <a href="<?php the_field('contact_website');?>">Website</a>
       </p>
     </div>
 

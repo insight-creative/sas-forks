@@ -45,11 +45,11 @@ img {
     float: right;
     padding-left: 30px;
     padding-bottom: 30px; }
+
   .alignleft {
     float: left;
     padding-right: 30px;
     padding-bottom: 30px; } }
-
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
@@ -152,43 +152,70 @@ hr {
   margin-right: auto;
   padding: 15px; }
 
-@media (min-width: 30em) {
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.flex-container-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around; }
+
+@media (min-width: 60em) {
+  .flex-container {
+    flex-direction: row; }
+
+  .flex-container-reverse {
+    flex-direction: row; }
+
   .col-90 {
     float: left;
     width: 90%;
     padding-left: 15px;
     padding-right: 15px; }
+
   .col-80 {
     float: left;
     width: 80%;
     padding-left: 15px;
     padding-right: 15px; }
+
   .col-70 {
     float: left;
     width: 70%;
     padding-left: 15px;
     padding-right: 15px; }
+
   .col-50 {
     float: left;
     width: 50%;
     padding-left: 15px;
     padding-right: 15px; }
+
   .col-30 {
     float: left;
     width: 30%;
     padding-left: 15px;
     padding-right: 15px; }
+
+  .col-25 {
+    float: left;
+    width: 25%;
+    padding-left: 15px;
+    padding-right: 15px; }
+
   .col-20 {
     float: left;
     width: 20%;
     padding-left: 15px;
     padding-right: 15px; }
+
   .col-10 {
     float: left;
     width: 10%;
     padding-left: 15px;
     padding-right: 15px; } }
-
 .section {
   padding-top: 2rem;
   padding-bottom: 2rem; }
@@ -206,6 +233,12 @@ hr {
 
 .white {
   color: #FFFFFF; }
+
+::selection {
+  background: rgba(247, 211, 27, 0.6); }
+
+::-moz-selection {
+  background: rgba(247, 211, 27, 0.6); }
 
 .btn,
 .wpcf7-submit {
@@ -243,6 +276,16 @@ hr {
   color: #F7D31B !important;
   transition: .3s all; }
 
+.cn-button {
+  background: #F7D31B !important;
+  color: #000000 !important;
+  transition: .2s ease all !important; }
+
+.cn-button:hover {
+  background: #000000 !important;
+  color: #F7D31B !important;
+  transition: .2s ease all !important; }
+
 .card {
   margin-bottom: 2.5rem;
   padding-bottom: 2.5rem;
@@ -275,7 +318,6 @@ hr {
 @media (min-width: 30em) {
   .admin-bar .navbar {
     top: 30px; } }
-
 .navbar-header {
   max-width: 1180px;
   margin-left: auto;
@@ -332,30 +374,38 @@ hr {
     width: auto;
     height: 90px;
     background-color: transparent; }
+
   .navbar-nav li {
     display: flex;
     align-items: center; }
+
   .navbar-toggle {
     display: none; }
+
   .navbar-social {
     display: block; }
+
   .navbar-nav .top-menu-item {
     padding-left: 10px;
     padding-right: 10px; }
+
   .navbar-nav .top-menu-item a {
     display: inline-block;
     border-bottom: 0;
     color: #FFFFFF;
     text-transform: uppercase;
     font-size: .8rem; }
+
   .navbar-nav .top-menu-item a:hover {
     color: #F7D31B; }
+
   .submenu {
     display: none;
     position: absolute;
     top: 90px;
     background-color: #FFFFFF;
     border-top: 3px solid #F7D31B; }
+
   .navbar-nav .submenu a {
     padding: 15px;
     font-weight: bold;
@@ -363,11 +413,11 @@ hr {
     border-bottom: 1px solid #bbbbbb;
     width: 100%;
     transition: .3s background-color; }
+
   .navbar-nav .submenu a:hover {
     background-color: #F7D31B;
     color: #000000;
     transition: .3s background-color; } }
-
 .jumbotron {
   margin-bottom: 2rem;
   padding-top: 8rem;
@@ -385,11 +435,12 @@ hr {
 @media (min-width: 60em) {
   .jumbotron {
     padding-top: 7rem; }
+
   .jumbotron-title {
     font-size: 6rem; }
+
   .jumbotron-title-small {
     font-size: 3rem; } }
-
 #slides {
   position: relative;
   height: 100vh;
@@ -516,3 +567,21 @@ textarea {
 
 .wc-tabs a {
   border-bottom: 0; }
+
+#privacyPolicy {
+  margin-top: 100px; }
+
+/* Distributors Page styling  */
+.contactLogo {
+  margin-top: 20px; }
+
+.firstMap {
+  margin-bottom: 50px; }
+
+#stateSearch {
+  margin: 100px 0 100px 0; }
+
+#regionSearch {
+  margin: 100px 0 100px 0; }
+
+/*# sourceMappingURL=style.css.map */
