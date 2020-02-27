@@ -14,7 +14,7 @@ class Slide {
 
 $slides = array(
   new Slide('Engineered tough', 'Auto salvage forks • Engine pullers • Grapples • Quick couplers', 'sas-vulture-wire-picker-banner.jpg', 'SAS Extreme', '/product/sas-extreme-auto-processor/'),
-  new Slide('Engineered tough', 'Auto salvage forks • Engine pullers • Grapples • Quick couplers', 'homepage-banner4.jpg', 'Ultimate Adjustible Forks', '/product/ultimate-adjustable-forks/'),
+  new Slide('Engineered tough', 'Auto salvage forks • Engine pullers • Grapples • Quick couplers', 'homepage-banner4.jpg', 'Ultimate Adjustable Forks', '/product/ultimate-adjustable-forks/'),
   new Slide('Engineered tough', 'Auto salvage forks • Engine pullers • Grapples • Quick couplers', 'sasforks-dumpster-banner.jpg', 'Dumpsters/Buckets', '/product-category/dumpsters-and-buckets/'),
   new Slide('Engineered tough', 'Auto salvage forks • Engine pullers • Grapples • Quick couplers', 'sas-railroad-coupler-banner.jpg', 'Railroad Couplers', '/product/railroad-coupler/'),
   new Slide('Engineered tough', 'Auto salvage forks • Engine pullers • Grapples • Quick couplers', 'sas-auto-salvage-forks-banner.jpg', 'Auto Salvage Forks', '/product-category/auto-salvage-forks/')

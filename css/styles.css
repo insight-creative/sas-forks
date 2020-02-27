@@ -163,11 +163,7 @@ hr {
   justify-content: space-around; }
 
 @media (min-width: 60em) {
-<<<<<<< HEAD
-  .flex-container {
-=======
   .flex-container-reverse {
->>>>>>> aa4a6441f4110bb4ab097c9a121178bcdcd76891
     flex-direction: column-reverse; }
 
   .col-90 {

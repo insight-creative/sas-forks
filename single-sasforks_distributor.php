@@ -20,8 +20,34 @@
     <?php the_content(); ?>
   </section>
 
-  <section class="container cf flex-container">
   <section class="container cf flex-container-reverse">
+    <div class="col-50">
+      <?php
+        $contactId = get_field('contact_form')[0]->ID;
+        echo do_shortcode("[contact-form-7 id='{$contactId}']");
+      ?>
+    </div>
+
+    <div class="col-50">
+      <?php if (get_field('distributor_logo')): ?>
+        <img src="<?php the_field('distributor_logo'); ?>" alt="<?php the_field('name'); ?>">
+      <?php endif; ?>
+      <address>
+        <strong><?php the_field('name'); ?></strong><br>
+        <?php the_field('address'); ?>
+      </address>
+      <p>
+        <strong><?php the_field('contact_name'); ?></strong><br>
+        Phone: <a href="tel:<?php the_field('contact_phone_number'); ?>"><?php the_field('contact_phone_number'); ?></a>  <a href="tel:<?php the_field('contact_phone_number_two'); ?>"><?php the_field('contact_phone_number_two'); ?></a><br>
+        <?php if (get_field('contact_fax')): ?>Fax: <?php the_field('contact_fax'); ?><br><?php endif; ?>
+        <a href="<?php the_field('contact_website');?>">Website</a>
+      </p>
+    </div>
+
+    <?php endwhile; else: ?>
+    	<p><?php _e('Sorry, this page does not exist.'); ?></p>
+    <?php endif; ?>
+  </section>
 </main>
 
 <?php get_footer(); ?>
