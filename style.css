@@ -587,4 +587,18 @@ textarea {
 .postid-12651 .wp-post-image {
   display: none; }
 
+.footer-social {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.footer-social li {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+.footer-social li a {
+  padding: 1rem;
+}
 /*# sourceMappingURL=style.css.map */

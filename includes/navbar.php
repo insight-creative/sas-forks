@@ -10,7 +10,6 @@
         'sublink_class' => ''
       ));
     ?>
-    <span><a class="navbar-social white" href="https://twitter.com/sasforks" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
     <span class="navbar-toggle"><i class="fa fa-bars" aria-hidden="true"></i> Menu</span>
   </div>
 </nav>

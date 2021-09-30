@@ -10,8 +10,6 @@ function theme_styles() {
   $theme = wp_get_theme();
   $version = $theme->get('Version');
 
-  wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-
   if ($font_url) {
     wp_enqueue_style( 'fonts', $font_url);
   }
