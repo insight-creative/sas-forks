@@ -94,15 +94,13 @@ function stateSearch () {
     var selectedState = document.querySelector(".choiceList").value;
 
     if (selectedState === "Select") {
-      document.querySelector("#selectError").innerHTML= "You must select a state so we can guide you to the proper distributor!";
+      document.querySelector("#selectError").innerHTML= "Please select a state so we can guide you to the proper distributor!";
       Object.assign(selectError.style,{background: "#F8F8F8",margin:"10px",padding:"20px"});
     } else if (selectedState === "Region Select"){
-      document.querySelector("#selectError").innerHTML= "You must select a region so we can guide you to the proper distributor!";
+      document.querySelector("#selectError").innerHTML= "Please select a region so we can guide you to the proper distributor!";
       Object.assign(selectError.style,{background: "#F8F8F8",margin:"10px",padding:"20px"});
     } else if (selectedState === "USA") {
       stateSearchButton.setAttribute("href", "/usa-distributors/");
-    } else if (selectedState === "Lower Michigan") {
-      stateSearchButton.setAttribute("href", "/contact/michigan-distributor/");
     } else if (selectedState === "Australia") {
       stateSearchButton.setAttribute("href", "/contact/australia-distributor/");
     } else if (selectedState === "Europe") {
@@ -111,25 +109,3 @@ function stateSearch () {
       stateSearchButton.setAttribute("href", "/contact/sas-forks/");
   }
 }
-
-
-// Script for our region search submit button
-/*
-var searchButton = document.querySelector("#regionSearchButton");
-searchButton.addEventListener("click", regionSearch, false);
-//function to check if lower michigan was selected, they are the only other us distributor
-function regionSearch () {
-    var selectedRegion = document.querySelector("#regionList").value;
-
-    if (selectedRegion === "Select") {
-      document.querySelector("#regionSelectError").innerHTML= "You must select a region so we can guide you to the proper distributor!";
-      Object.assign(regionSelectError.style,{background: "#F8F8F8",margin:"10px",padding:"20px"});
-    } else if (selectedRegion === "Australia"){
-      searchButton.setAttribute("href", "/sasForksTest/contact/australia-distributor/");
-    } else if (selectedRegion === "Europe"){
-      searchButton.setAttribute("href", "/sasForksTest/contact/europe-distributor/");
-    } else{
-      searchButton.setAttribute("href", "/sasForksTest/usa-distributors/");
-  }
-}
-*/
