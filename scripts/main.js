@@ -99,8 +99,6 @@ function stateSearch () {
     } else if (selectedState === "Region Select"){
       document.querySelector("#selectError").innerHTML= "Please select a region so we can guide you to the proper distributor!";
       Object.assign(selectError.style,{background: "#F8F8F8",margin:"10px",padding:"20px"});
-    } else if (selectedState === "USA") {
-      stateSearchButton.setAttribute("href", "/usa-distributors/");
     } else if (selectedState === "Australia") {
       stateSearchButton.setAttribute("href", "/contact/australia-distributor/");
     } else if (selectedState === "Europe") {
